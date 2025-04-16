@@ -160,4 +160,4 @@ I plan to expand this portfolio with:
 
 ## Contact
 
-Feel free to contact me at [your-email@example.com](mailto:your-email@example.com) for any questions or collaboration opportunities..
+Feel free to contact me at mbg.job.mail@gmail.com for any questions or collaboration opportunities..
