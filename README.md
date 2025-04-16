@@ -77,7 +77,10 @@ I plan to expand this portfolio with:
 - Cucumber integration for BDD approach
 - Integration with CI/CD pipelines
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
 ## Project Overview
 
 This project demonstrates my approach to building a scalable and maintainable test automation framework. It includes:
@@ -155,4 +158,8 @@ I plan to expand this portfolio with:
 
 ## Contact
 
+<<<<<<< HEAD
 Feel free to contact me at mbg.job.mail@gmail.com for any questions or collaboration opportunities..
+=======
+Feel free to contact me at mbg.job.mail@gmail.com for any questions or collaboration opportunities..
+>>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
