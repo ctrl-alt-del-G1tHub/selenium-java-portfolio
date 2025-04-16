@@ -77,12 +77,6 @@ I plan to expand this portfolio with:
 - Cucumber integration for BDD approach
 - Integration with CI/CD pipelines
 
-## Contact
-
-Feel free to contact me at [your-email@example.com](mailto:your-email@example.com) for any questions or collaboration opportunities# Test Automation Portfolio
-
-A showcase of my test automation skills using Selenium WebDriver, Java, TestNG, and Maven.
-
 ## Project Overview
 
 This project demonstrates my approach to building a scalable and maintainable test automation framework. It includes:
