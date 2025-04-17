@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ctrl.alt.del.g1thub.tests.MaryBeAPoetTest">
+      <class name="github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest">
         <methods>
-          <include name="setUp"/>
-          <include name="navigateToHomePage"/>
           <include name="tearDown"/>
-          <include name="testContactPage"/>
-          <include name="takeScreenshotOnFailure"/>
+          <include name="setUp"/>
+          <include name="navigateToBookDetailAfterSearch"/>
         </methods>
-      </class> <!-- ctrl.alt.del.g1thub.tests.MaryBeAPoetTest -->
+      </class> <!-- github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
