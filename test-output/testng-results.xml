@@ -1,64 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T22:19:06 CDT" name="Default suite" finished-at="2025-04-16T22:19:22 CDT" duration-ms="16128">
+  <suite started-at="2025-04-17T10:08:19 CDT" name="Default suite" finished-at="2025-04-17T10:09:11 CDT" duration-ms="51948">
     <groups>
     </groups>
-    <test started-at="2025-04-16T22:19:06 CDT" name="Default test" finished-at="2025-04-16T22:19:22 CDT" duration-ms="16128">
-      <class name="github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest@22ff4249]" started-at="2025-04-16T22:19:06 CDT" name="setUp" finished-at="2025-04-16T22:19:07 CDT" duration-ms="1325" status="PASS">
+    <test started-at="2025-04-17T10:08:19 CDT" name="Default test" finished-at="2025-04-17T10:09:11 CDT" duration-ms="51948">
+      <class name="locators.CssSelectorTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:19 CDT" name="setUp" finished-at="2025-04-17T10:08:22 CDT" duration-ms="2791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="navigateToBookDetailAfterSearch()[pri:0, instance:github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest@22ff4249]" started-at="2025-04-16T22:19:07 CDT" name="navigateToBookDetailAfterSearch" finished-at="2025-04-16T22:19:21 CDT" duration-ms="14431" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Expected to land on a Hobbit book detail page expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected to land on a Hobbit book detail page expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest.navigateToBookDetailAfterSearch(OpenLibrarySearchTest.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testBorrowButton()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:22 CDT" name="testBorrowButton" description="Exercise 29: Find Borrow button on book detail page using CSS Selector" finished-at="2025-04-17T10:08:25 CDT" duration-ms="3913" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToBookDetailAfterSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest@22ff4249]" started-at="2025-04-16T22:19:21 CDT" name="tearDown" finished-at="2025-04-16T22:19:22 CDT" duration-ms="338" status="PASS">
+        </test-method> <!-- testBorrowButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:25 CDT" name="tearDown" finished-at="2025-04-17T10:08:26 CDT" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:26 CDT" name="setUp" finished-at="2025-04-17T10:08:31 CDT" duration-ms="5650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBrowseByLanguageLinks()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:31 CDT" name="testBrowseByLanguageLinks" description="Exercise 36: Find the language browse links on the Languages page using CSS Selector" finished-at="2025-04-17T10:08:40 CDT" duration-ms="8428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowseByLanguageLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:40 CDT" name="tearDown" finished-at="2025-04-17T10:08:40 CDT" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:40 CDT" name="setUp" finished-at="2025-04-17T10:08:43 CDT" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogInButton()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:43 CDT" name="testLogInButton" description="Exercise 23: Find Log In button in header using CSS Selector" finished-at="2025-04-17T10:08:43 CDT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogInButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:43 CDT" name="tearDown" finished-at="2025-04-17T10:08:44 CDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:44 CDT" name="setUp" finished-at="2025-04-17T10:08:46 CDT" duration-ms="2901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageTwoLink()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:46 CDT" name="testPageTwoLink" description="Exercise 14: Find page number 2 link in pagination using CSS Selector" finished-at="2025-04-17T10:08:49 CDT" duration-ms="2305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageTwoLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:49 CDT" name="tearDown" finished-at="2025-04-17T10:08:49 CDT" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:49 CDT" name="setUp" finished-at="2025-04-17T10:08:52 CDT" duration-ms="2621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchBooksHeader()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:52 CDT" name="testSearchBooksHeader" description="Exercise 40: Find Search Books header using CSS Selector" finished-at="2025-04-17T10:08:58 CDT" duration-ms="5980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBooksHeader -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:58 CDT" name="tearDown" finished-at="2025-04-17T10:08:58 CDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:08:58 CDT" name="setUp" finished-at="2025-04-17T10:09:00 CDT" duration-ms="2437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchBoxInForm()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:00 CDT" name="testSearchBoxInForm" description="Exercise 9: Find the search box inside search form using CSS Selector" finished-at="2025-04-17T10:09:00 CDT" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchBoxInForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:00 CDT" name="tearDown" finished-at="2025-04-17T10:09:01 CDT" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:01 CDT" name="setUp" finished-at="2025-04-17T10:09:03 CDT" duration-ms="2214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchButton()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:03 CDT" name="testSearchButton" description="Exercise 2: Find the Search button using CSS Selector" finished-at="2025-04-17T10:09:03 CDT" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:03 CDT" name="tearDown" finished-at="2025-04-17T10:09:03 CDT" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:03 CDT" name="setUp" finished-at="2025-04-17T10:09:06 CDT" duration-ms="3105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTermsOfServiceLink()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:06 CDT" name="testTermsOfServiceLink" description="Exercise 19: Find Terms of Service link in footer using CSS Selector" finished-at="2025-04-17T10:09:06 CDT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTermsOfServiceLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:06 CDT" name="tearDown" finished-at="2025-04-17T10:09:06 CDT" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:06 CDT" name="setUp" finished-at="2025-04-17T10:09:10 CDT" duration-ms="4131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTrendingCarouselRightArrowButton()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:10 CDT" name="testTrendingCarouselRightArrowButton" description="Exercise 44: Find the Featured Books for Trending Books carousel right arrow button using CSS Selector" finished-at="2025-04-17T10:09:10 CDT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTrendingCarouselRightArrowButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@40a4337a]" started-at="2025-04-17T10:09:10 CDT" name="tearDown" finished-at="2025-04-17T10:09:11 CDT" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- locators.CssSelectorTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

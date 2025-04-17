@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest">
+      <class name="locators.CssSelectorTests">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="navigateToBookDetailAfterSearch"/>
+          <include name="testPageTwoLink"/>
         </methods>
-      </class> <!-- github.ctrlaltdel.selenium.openlibrary.OpenLibrarySearchTest -->
+      </class> <!-- locators.CssSelectorTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
