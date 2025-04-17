@@ -153,7 +153,7 @@ public class CssSelectorTests {
     public void testTrendingCarouselRightArrowButton() {
     	
         try {
-            WebElement rightArrowButton = driver.findElement(By.cssSelector("body > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)"));
+            WebElement rightArrowButton = driver.findElement(By.cssSelector("body > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-   	    child(1) > button:nth-child(3)"));
 
 	   Assert.assertTrue(rightArrowButton.isDisplayed(),
                              "Trending Books carousel right arrow button not found using CSS selector");
@@ -163,8 +163,65 @@ public class CssSelectorTests {
             Assert.fail("Failed to find Trending Books carousel right arrow button with CSS selector: " + e.getMessage());
         }
     }
-    
-    
+
+    @Test(description = "Exercise 46: Find the first book cover in the search results using CSS Selector")
+    public void testFirstBookCover() {
+    	try {
+
+        // Go to search results page
+        driver.get("https://openlibrary.org/search?q=harry+potter");
+
+        // Wait for the presence of at least one book cover image
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".searchResultItem .bookcover img")));
+
+        // Get list of all book covers
+        List<WebElement> covers = driver.findElements(By.cssSelector(".searchResultItem .bookcover img"));
+
+        // Check list size
+        Assert.assertTrue(covers.size() > 0, "No book covers were found.");
+
+        WebElement firstCover = covers.get(0);
+
+        // Check if first cover is displayed
+        Assert.assertTrue(firstCover.isDisplayed(), "First book cover is not displayed.");
+
+        System.out.println("PASS: First book cover found and displayed.");
+
+    } catch (Exception e) {
+        Assert.fail("FAILED: Could not find first book cover. Reason: " + e.getMessage());
+    }
+}
+   @Test(description = "Exercise 46.5: Find the second book cover in the search results using CSS Selector")
+   public void testSecondBookCover() {
+    try {
+        // Go to search results page
+        driver.get("https://openlibrary.org/search?q=hunger+games&mode=everything");
+
+        // Wait until at least two book covers are present in the DOM
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        List<WebElement> bookCovers = wait.until(
+            ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector(".searchResultItem .bookcover img"))
+        );
+
+        // Ensure that at least two book covers are found
+        if (bookCovers.size() < 2) {
+            Assert.fail("Second book cover not found, only found " + bookCovers.size() + " book covers.");
+        }
+
+        // Get the second book cover image element
+        WebElement secondCover = bookCovers.get(1); // Index 1 = second item in list
+
+        // Assert it's displayed
+        Assert.assertTrue(secondCover.isDisplayed(), "Second book cover is not displayed.");
+
+        System.out.println("PASS: Second book cover found and displayed.");
+    } catch (Exception e) {
+        Assert.fail("FAILED: Could not find second book cover. Reason: " + e.getMessage());
+    }
+}
+
+
     @AfterMethod
     public void tearDown() {
         if (driver != null) {

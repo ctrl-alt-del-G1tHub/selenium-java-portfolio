@@ -54,8 +54,18 @@ public class CssSelectorLocators {
     }
 
     // Exercise 44: Find the Featured Books for "Trending Books carousel right arrow" button using CSS Selector
-  public WebElement getRightArrowButton () {
+    public WebElement getRightArrowButton () {
 	return driver.findElement(By.cssSelector("body > div:nth-child(9) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > button:nth-child(3)"));
 
     }
+    // Exercise 46s: Find the first (any) book cover in the search results using CSS Selector
+   public WebElement getBookCoverByIndex(int index) {
+    List<WebElement> covers = driver.findElements(By.cssSelector(".searchResultItem .bookcover img"));
+    if (covers.size() > index) {
+        return covers.get(index);
+    } else {
+        System.out.println("WARNING: Only found " + covers.size() + " book cover(s). Index " + index + " is out of range.");
+        return null;
+    }
+}
 }

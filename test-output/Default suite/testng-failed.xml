@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testPageTwoLink"/>
+          <include name="testSecondBookCover"/>
         </methods>
       </class> <!-- locators.CssSelectorTests -->
     </classes>
