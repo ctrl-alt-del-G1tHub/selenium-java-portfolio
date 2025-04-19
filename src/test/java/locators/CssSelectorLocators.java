@@ -67,5 +67,80 @@ public class CssSelectorLocators {
         System.out.println("WARNING: Only found " + covers.size() + " book cover(s). Index " + index + " is out of range.");
         return null;
     }
+    
+    }
+   
+   // Exercise 54: Find the "Sign Up" button at the top-right corner using CSS Selector
+   public WebElement getSignUpButton() {
+        return driver.findElement(By.cssSelector(".btn.primary"));
+
+
+   }
+
+   // Exercise 64: Find the "Art Books" from Browse by Subject section using CSS Selector 
+   public WebElement getBooksSection() {
+        return driver.findElement(By.cssSelector("img[alt='browse Art books']"));
+
+
+   }
+
+   // Exercise 71: Find the second book in the "Books We Love" section using CSS Selector
+   public WebElement getSecondBestBook() {
+        return driver.findElement(By.cssSelector(".carousel__item:nth-child(2) .book-cover img"));
+
+   }
+
+
+
+   // Exercise 79: Find the "Blog" section using CSS Selector
+   public WebElement getBlogSection() {
+        return driver.findElement(By.cssSelector("body > footer:nth-child(11) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)"));
+
+
+   }
+
+   // Exercise 81: Find the "Search by barcode" button icon in the form using CSS Selector
+   public WebElement getSearchByBarcodeButton() {
+        return driver.findElement(By.cssSelector("#barcode_scanner_link"));
+
+
+   }
+
+   // Exercise 84: Find the "Follow Us on Twitter" button using CSS Selector
+   public WebElement getFollowUsOnTwitter() {
+        return driver.findElement(By.cssSelector("img[src='/static/images/tweet.svg']"));
+
+
+   }
+
+   // Exercise 86: Find the "Next Page" button in the pagination using CSS Selector
+   public WebElement getNextPageButton() {
+        return driver.findElement(By.cssSelector("body > div:nth-child(9) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > a:nth-child(2)"));
+
+
+
+   }
+
+   // Exercise 91: Find the first book image in the "Trending Books" carousel using CSS Selector
+   public WebElement getFirstTrendingBooks() {
+        return driver.findElement(By.cssSelector(".trending-books .book:nth-of-type(1) img"));
+
+
+
+   }
+
+   // Exercise 96: Find the "Writing Bots" button on a book detail page using CSS Selector
+   public WebElement getWritingBotsButton() {
+        return driver.findElement(By.cssSelector("a[title='Write a bot']"));
+
+
+
+  }
+
+   // Exercise 99:  Find the "Browse" button using CSS Selector
+   public WebElement getBrowseButton() {
+        return driver.findElement(By.cssSelector("ul[class='navigation-component'] summary:nth-child(1)"));
+
+
 }
 }

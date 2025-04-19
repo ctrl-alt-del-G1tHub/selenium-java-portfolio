@@ -221,7 +221,43 @@ public class CssSelectorTests {
     }
 }
 
+    @Test(description = "Exercise 54: Find the Sign Up button at the top-right corner using CSS Selector")
+    public void testSignUpButton() {
+        try {
+            WebElement signUpButton = driver.findElement(By.cssSelector(".btn.primary"));
+            Assert.assertTrue(signUpButton.isDisplayed(), 
+                             "Sign Up button not found using CSS selector");
+            System.out.println("PASS: Successfully found Sign Up button using CSS Selector");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Sign Up button with CSS selector: " + e.getMessage());
+        }
+    }
 
+
+    @Test(description = "Exercise 64: Find the Art Books from Browse by Subject section using CSS Selector") 
+    public void testBooksSection() {
+        try {
+            WebElement booksSection = driver.findElement(By.cssSelector("img[alt='browse Art books']"));
+            Assert.assertTrue(booksSection.isDisplayed(), 
+                             "Art Books button not found using CSS selector");
+            System.out.println("PASS: Successfully found Art books button using CSS Selector");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Sign Up button with CSS selector: " + e.getMessage());
+        }
+    }
+
+    @Test(description = "Exercise 71: Find the second book in the Best Books section using CSS Selector") 
+    public void testSecondBestBook() {
+        try {
+              WebElement secondBestBook = driver.findElement(By.cssSelector(".book.carousel__item.slick-slide:nth-child(2) img"));
+              Assert.assertTrue(secondBestBook.isDisplayed(), 
+                         "Second Best Book not found using CSS selector");
+              System.out.println("PASS: Successfully found Second Best Book using CSS Selector");
+    }       catch (Exception e) {
+              Assert.fail("Failed to find Second Best Book with CSS selector: " + e.getMessage());
+    }
+}
+    
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
