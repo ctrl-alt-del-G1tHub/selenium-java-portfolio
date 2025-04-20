@@ -5,9 +5,9 @@
     <classes>
       <class name="locators.CssSelectorTests">
         <methods>
-          <include name="testSecondBestBook"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testFirstTrendingBooks"/>
         </methods>
       </class> <!-- locators.CssSelectorTests -->
     </classes>

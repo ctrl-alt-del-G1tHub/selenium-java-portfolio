@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="13" total="14" passed="1" failed="0" skipped="0">
+<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T00:38:04 CDT" name="Default suite" finished-at="2025-04-19T00:38:06 CDT" duration-ms="2704">
+  <suite started-at="2025-04-19T19:51:33 CDT" name="Default suite" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2458">
     <groups>
     </groups>
-    <test started-at="2025-04-19T00:38:04 CDT" name="Default test" finished-at="2025-04-19T00:38:06 CDT" duration-ms="2704">
+    <test started-at="2025-04-19T19:51:33 CDT" name="Default test" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2458">
       <class name="locators.CssSelectorTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@5542c4ed]" started-at="2025-04-19T00:38:04 CDT" name="setUp" finished-at="2025-04-19T00:38:06 CDT" duration-ms="2424" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:33 CDT" name="setUp" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSecondBestBook()[pri:0, instance:locators.CssSelectorTests@5542c4ed]" started-at="2025-04-19T00:38:06 CDT" name="testSecondBestBook" description="Exercise 71: Find the second book in the Best Books section using CSS Selector" finished-at="2025-04-19T00:38:06 CDT" duration-ms="54" status="PASS">
+        <test-method signature="testBrowseButton()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:35 CDT" name="testBrowseButton" description="Exercise 96: Find the Writing Bots button on a book detail page using CSS Selector" finished-at="2025-04-19T19:51:35 CDT" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSecondBestBook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@5542c4ed]" started-at="2025-04-19T00:38:06 CDT" name="tearDown" finished-at="2025-04-19T00:38:06 CDT" duration-ms="183" status="PASS">
+        </test-method> <!-- testBrowseButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:35 CDT" name="tearDown" finished-at="2025-04-19T19:51:35 CDT" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

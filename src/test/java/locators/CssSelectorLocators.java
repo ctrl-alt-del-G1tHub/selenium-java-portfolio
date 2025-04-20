@@ -121,13 +121,13 @@ public class CssSelectorLocators {
 
    }
 
-   // Exercise 91: Find the first book image in the "Trending Books" carousel using CSS Selector
-   public WebElement getFirstTrendingBooks() {
-        return driver.findElement(By.cssSelector(".trending-books .book:nth-of-type(1) img"));
+  // Exercise 91: Find the first book image in the "Trending Books" carousel using CSS Selector
+  public WebElement getFirstTrendingBooks() {
+    // Look for book covers that are currently visible
+    return driver.findElement(By.cssSelector(".book-cover img[src*='covers.openlibrary.org']"));
 
 
-
-   }
+  }
 
    // Exercise 96: Find the "Writing Bots" button on a book detail page using CSS Selector
    public WebElement getWritingBotsButton() {

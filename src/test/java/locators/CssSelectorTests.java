@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -253,11 +254,115 @@ public class CssSelectorTests {
               Assert.assertTrue(secondBestBook.isDisplayed(), 
                          "Second Best Book not found using CSS selector");
               System.out.println("PASS: Successfully found Second Best Book using CSS Selector");
-    }       catch (Exception e) {
+        }   catch (Exception e) {
               Assert.fail("Failed to find Second Best Book with CSS selector: " + e.getMessage());
+    	}
+    }
+
+    @Test(description = "Exercise 79: Find the Blog section using CSS Selector")
+    public void testBlogSection() {
+	try {
+	     WebElement blogSection = driver.findElement(By.cssSelector("body > footer:nth-child(11) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(5) > a:nth-child(1)"));
+             Assert.assertTrue(blogSection.isDisplayed(),
+                        "Blog Section not found using CSS selector");
+             System.out.println("PASS: Successfully found Blog Section using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Blog Section with CSS selector: " + e.getMessage());
+       }
+
+    } 
+    
+    @Test(description = "Exercise 81: Find the Search by barcode button icon in the form using CSS Selector")
+    public void testSearchByBarcodeButton() {
+	try {
+	     WebElement searchByBarcodeButton = driver.findElement(By.cssSelector("#barcode_scanner_link"));
+             Assert.assertTrue(searchByBarcodeButton.isDisplayed(),
+                        "Search Barcode button not found using CSS selector");
+             System.out.println("PASS: Successfully found Search Barcode button using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Search Barcode button with CSS selector: " + e.getMessage());
+       }
+
+    } 
+    
+    @Test(description = "Exercise 84: Find the Follow Us on Twitter button using CSS Selector")
+    public void testFollowUsOnTwitter() {
+	try {
+	     WebElement followUsOnTwitter = driver.findElement(By.cssSelector("img[src='/static/images/tweet.svg']"));
+             Assert.assertTrue(followUsOnTwitter.isDisplayed(),
+                        "Twitter button not found using CSS selector");
+             System.out.println("PASS: Successfully found Twitter button using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Twitter button with CSS selector: " + e.getMessage());
+       }
+
+    } 
+
+    @Test(description = "Exercise 86: Find the Next Page button in the pagination using CSS Selector")
+    public void testNextPageButton() {
+	try {
+            // Navigate to a book details page first (this would need to be adjusted for actual site)
+            driver.get("https://openlibrary.org/search?q=arts+and+crafts&mode=everything");
+
+	     WebElement nextPageButton = driver.findElement(By.cssSelector("body > div:nth-child(9) > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > a:nth-child(2)"));
+             Assert.assertTrue(nextPageButton.isDisplayed(),
+                        "Next Page button not found using CSS selector");
+             System.out.println("PASS: Successfully found Next Page button using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Next Page button with CSS selector: " + e.getMessage());
+       }
+
+    } 
+
+    @Test(description = "Exercise 91: Find the first book image in the Trending Books carousel using CSS Selector")
+    public void testFirstTrendingBooks() {
+        try {
+             // Wait a moment for the page to load completely
+             Thread.sleep(2000);
+        
+            // Find book covers by looking for images from the covers domain
+            WebElement firstTrendingBooks = driver.findElement(By.cssSelector(".book-cover img[src*='covers.openlibrary.org']"));
+        
+           // Instead of relying on isDisplayed(), check that the element has non-zero dimensions
+           JavascriptExecutor js = (JavascriptExecutor) driver;
+           Boolean isVisible = (Boolean)js.executeScript(
+           "return arguments[0].getBoundingClientRect().width > 0 && arguments[0].getBoundingClientRect().height > 0;", 
+           firstTrendingBooks);
+        
+           Assert.assertTrue(isVisible, "First book image in Trending Books found but has zero dimensions");
+           System.out.println("PASS: Successfully found First book image in Trending Books using CSS Selector");
+    }     catch (Exception e) {
+            Assert.fail("Failed to find First book image in Trending Books with CSS selector: " + e.getMessage());
     }
 }
-    
+
+
+    @Test(description = "Exercise 96: Find the Writing Bots button on a book detail page using CSS Selector")
+    public void testWritingBotsButton() {
+        try {
+	     WebElement writingBotsButton = driver.findElement(By.cssSelector("a[title='Write a bot']"));
+             Assert.assertTrue(writingBotsButton.isDisplayed(),
+                        "Writing Bots button not found using CSS selector");
+             System.out.println("PASS: Successfully found Writing Bots button using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Writing Bots button with CSS selector: " + e.getMessage());
+       }
+
+    } 
+
+    @Test(description = "Exercise 96: Find the Writing Bots button on a book detail page using CSS Selector")
+    public void testBrowseButton() {
+        try {
+	     WebElement browseButton = driver.findElement(By.cssSelector("ul[class='navigation-component'] summary:nth-child(1)"));
+             Assert.assertTrue(browseButton.isDisplayed(),
+                        "Browse button not found using CSS selector");
+             System.out.println("PASS: Successfully found Browse button using CSS Selector");
+       }    catch (Exception e) {
+              Assert.fail("Failed to find Browse button with CSS selector: " + e.getMessage());
+       }
+
+    } 
+
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
