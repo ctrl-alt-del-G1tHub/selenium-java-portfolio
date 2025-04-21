@@ -2,18 +2,13 @@
 
 A showcase of my test automation skills using **Selenium WebDriver, Java, TestNG**, and **Maven**.
 
----
-
 ## 📋 Project Overview
 
 This project demonstrates a scalable and maintainable test automation framework with:
-
 - Page Object Model (POM) design pattern
 - Utility classes for WebDriver management
 - TestNG for assertions and execution
 - Maven for dependency and build management
-
----
 
 ## 🧪 Test Scenarios
 
@@ -28,12 +23,11 @@ This project demonstrates a scalable and maintainable test automation framework 
   - [https://openlibrary.org](https://openlibrary.org) (where applicable)
 
 ### 3. **Custom Poetic Exercise**
-- A fun test inspired by my poetic interests (`MaryBeAPoetTest.java`)
-
----
+- A fun test inspired by my poetic interests using my website https://www.marybeapoet.com/(`MaryBeAPoetTest.java`)
 
 ## 🧱 Project Structure
 
+```
 temp-portfolio/
 ├── src/
 │   ├── main/
@@ -56,8 +50,7 @@ temp-portfolio/
 ├── pom.xml
 ├── testng.xml
 └── README.md
-
----
+```
 
 ## 🛠 Technical Stack
 
@@ -66,8 +59,6 @@ temp-portfolio/
 - TestNG 7.x
 - Maven 3.x
 - ChromeDriver (manually placed under `Drivers/`)
-
----
 
 ## ▶️ How to Run Tests
 
@@ -80,23 +71,21 @@ temp-portfolio/
 1. Clone this repo
 2. Import into Eclipse/IntelliJ
 3. Run with TestNG or from command line:
-
 ```bash
 mvn clean test
+```
 
-🧩 Notes on Locators
+## 🧩 Notes on Locators
+
 Some ID-based exercises use demoqa.com instead of Open Library due to missing or dynamic IDs.
-
 Exercises like IDTests.java and CssSelectorTests.java include examples of working with tables, buttons, and headers.
 
-📌 Future Enhancements
-Additional test scenarios for different websites
-API testing examples
-Performance testing samples
+## 📌 Future Enhancements
 
+- Additional test scenarios for different websites
+- API testing examples
+- Performance testing samples
 
+## 📫 Contact
 
-📫 Contact
 Feel free to reach out to me at mbg.job.mail@gmail.com for collaboration or questions.
->>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
-
