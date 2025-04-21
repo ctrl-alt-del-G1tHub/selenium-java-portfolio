@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-19T19:51:33 CDT" name="Default suite" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2458">
+  <suite started-at="2025-04-21T02:13:31 CDT" name="Default suite" finished-at="2025-04-21T02:13:43 CDT" duration-ms="11191">
     <groups>
     </groups>
-    <test started-at="2025-04-19T19:51:33 CDT" name="Default test" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2458">
-      <class name="locators.CssSelectorTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:33 CDT" name="setUp" finished-at="2025-04-19T19:51:35 CDT" duration-ms="2150" status="PASS">
+    <test started-at="2025-04-21T02:13:31 CDT" name="Default test" finished-at="2025-04-21T02:13:43 CDT" duration-ms="11191">
+      <class name="locators.IDTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:31 CDT" name="setUp" finished-at="2025-04-21T02:13:36 CDT" duration-ms="4609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testBrowseButton()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:35 CDT" name="testBrowseButton" description="Exercise 96: Find the Writing Bots button on a book detail page using CSS Selector" finished-at="2025-04-19T19:51:35 CDT" duration-ms="61" status="PASS">
+        <test-method signature="testRegistrationSubmitButton()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:36 CDT" name="testRegistrationSubmitButton" description="Exercise 98: Find the &#039;Submit&#039; button on Registration Form update in Web Tables using ID" finished-at="2025-04-21T02:13:42 CDT" duration-ms="6237" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBrowseButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.CssSelectorTests@2f4948e4]" started-at="2025-04-19T19:51:35 CDT" name="tearDown" finished-at="2025-04-19T19:51:35 CDT" duration-ms="195" status="PASS">
+        </test-method> <!-- testRegistrationSubmitButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:42 CDT" name="tearDown" finished-at="2025-04-21T02:13:43 CDT" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- locators.CssSelectorTests -->
+      </class> <!-- locators.IDTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

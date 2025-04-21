@@ -1,0 +1,75 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class IDLocators {
+    private WebDriver driver;
+    
+    public IDLocators(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+    // Exercise 7: Find "Accordian Open" using By.id
+    public WebElement getAccordianOpen() {
+        return driver.findElement(By.id("section1Heading"));
+    }
+    
+    // Exercise 15: Find the "Full Name" input field using By.id
+    public WebElement getFullNameInput() {
+        return driver.findElement(By.id("userName"));
+    }
+    
+    // Exercise 21: Find the "Submit" button using By.id
+    public WebElement getSubmitButton() {
+        return driver.findElement(By.id("submit"));
+    }
+    
+    // Exercise 26:Find the "Email" input field using By.id
+    public WebElement getEmailInput() {
+        return driver.findElement(By.id("userEmail"));
+    }
+    
+    // Exercise 34: Find the "Current Address" textarea using By.id
+    public WebElement getCurrentAddress() {
+        return driver.findElement(By.id("currentAddress"));
+    }
+
+    // Exercise 48: Find the "Permanent Address" textarea using By.id
+    public WebElement getPermanentAddress() {
+        return driver.findElement(By.id("permanentAddress")); // text box
+    }
+    
+    // Exercise 52: Find the "First Name" input field in the Registration Form using By.id
+    public WebElement getFirstNameInput() {
+        return driver.findElement(By.id("firstName")); //practice form
+    }
+    
+    // Exercise 65: Find the "Search Box" in the Web Tables section using By.id
+    public WebElement getSearchBox() {
+        return driver.findElement(By.id("searchBox"));
+    }
+    
+    // Exercise 70: Find the "Add" button in the Web Tables section using By.id
+    public WebElement getAddButton() {
+        return driver.findElement(By.id("addNewRecordButton")); //web tables
+    }
+
+    // Exercise 73: Find the "Salary" input on Registration Form update in Web Tables using By.id
+    public WebElement getSalaryInput() {
+        return driver.findElement(By.id("salary"));
+    }
+    
+    // Exercise 78: Find the "Department" input on Registration Form update in Web Tables using By.id
+    public WebElement getDepartmentInput() {
+        return driver.findElement(By.id("department"));
+    }
+
+    // Exercise 98: Find the "Submit" button on Registration Form update in Web Tables using By.id
+    public WebElement getRegistrationSubmitButton() {
+        return driver.findElement(By.id("submit"));
+    }
+
+}
+

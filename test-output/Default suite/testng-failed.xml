@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="locators.CssSelectorTests">
+      <class name="locators.IDTests">
         <methods>
-          <include name="tearDown"/>
+          <include name="testSearchBoxById"/>
           <include name="setUp"/>
-          <include name="testFirstTrendingBooks"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- locators.CssSelectorTests -->
+      </class> <!-- locators.IDTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

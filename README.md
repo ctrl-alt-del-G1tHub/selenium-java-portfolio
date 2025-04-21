@@ -1,165 +1,102 @@
 # Test Automation Portfolio
 
-A showcase of my test automation skills using Selenium WebDriver, Java, TestNG, and Maven.
+A showcase of my test automation skills using **Selenium WebDriver, Java, TestNG**, and **Maven**.
 
-## Project Overview
+---
 
-This project demonstrates my approach to building a scalable and maintainable test automation framework. It includes:
+## 📋 Project Overview
 
-- Page Object Model (POM) design pattern implementation
+This project demonstrates a scalable and maintainable test automation framework with:
+
+- Page Object Model (POM) design pattern
 - Utility classes for WebDriver management
-- TestNG for test execution and assertions
-- Maven for dependency management and build automation
+- TestNG for assertions and execution
+- Maven for dependency and build management
 
-## Test Scenarios
+---
 
-Currently, this portfolio includes automated tests for:
+## 🧪 Test Scenarios
 
-1. **Login Functionality**
-   - Successful login with valid credentials
-   - Error handling with invalid credentials
-   - Error handling with valid username but invalid password
+### 1. **Login Functionality**
+- Successful login with valid credentials
+- Error handling with invalid credentials
+- Error handling with valid username but invalid password
 
-## Technical Stack
+### 2. **Locator Practice**
+- ID and CSS locator tests using:
+  - [https://demoqa.com](https://demoqa.com)
+  - [https://openlibrary.org](https://openlibrary.org) (where applicable)
+
+### 3. **Custom Poetic Exercise**
+- A fun test inspired by my poetic interests (`MaryBeAPoetTest.java`)
+
+---
+
+## 🧱 Project Structure
+
+temp-portfolio/
+├── src/
+│   ├── main/
+│   │   └── resources/
+│   └── test/
+│       ├── java/
+│       │   ├── ctrl.alt.del.g1thub.tests/
+│       │   │   ├── LoginTest.java
+│       │   │   └── MaryBeAPoetTest.java
+│       │   ├── github.ctrlaltdel.selenium.openlibrary/
+│       │   │   └── OpenLibrarySearchTest.java
+│       │   └── locators/
+│       │       ├── CssSelectorLocators.java
+│       │       ├── CssSelectorTests.java
+│       │       ├── IDLocators.java
+│       │       └── IDTests.java
+│       └── resources/
+├── Drivers/
+│   └── chromedriver.exe
+├── pom.xml
+├── testng.xml
+└── README.md
+
+---
+
+## 🛠 Technical Stack
 
 - Java 11+
 - Selenium WebDriver 4.x
 - TestNG 7.x
 - Maven 3.x
-- WebDriverManager for driver management
+- ChromeDriver (manually placed under `Drivers/`)
 
-## Project Structure
+---
 
-```
-test-automation-portfolio/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── mary/
-│   │               └── testing/
-│   │                   ├── pages/      # Page Objects
-│   │                   └── utils/      # Utility classes
-│   └── test/
-│       ├── java/
-│       │   └── com/
-│       │       └── mary/
-│       │           └── testing/
-│       │               └── tests/      # Test classes
-│       └── resources/                  # Test data & config files
-├── pom.xml                             # Maven configuration
-├── testng.xml                          # TestNG configuration
-└── README.md                           # This file
-```
-
-## How to Run Tests
+## ▶️ How to Run Tests
 
 ### Prerequisites
-- Java JDK 11 or higher installed
+- Java JDK 11+
 - Maven installed
-- Chrome browser installed (or update WebDriverFactory to use your preferred browser)
+- Chrome browser
 
-### Running Tests
-1. Clone this repository
-2. Navigate to the project root directory
-3. Run the tests using Maven:
-   ```
-   mvn clean test
-   ```
+### Steps
+1. Clone this repo
+2. Import into Eclipse/IntelliJ
+3. Run with TestNG or from command line:
 
-## Future Enhancements
+```bash
+mvn clean test
 
-I plan to expand this portfolio with:
+🧩 Notes on Locators
+Some ID-based exercises use demoqa.com instead of Open Library due to missing or dynamic IDs.
 
-- Additional test scenarios for different websites
-- API testing examples
-- Performance testing samples
-- Cucumber integration for BDD approach
-- Integration with CI/CD pipelines
+Exercises like IDTests.java and CssSelectorTests.java include examples of working with tables, buttons, and headers.
 
-<<<<<<< HEAD
+📌 Future Enhancements
+Additional test scenarios for different websites
+API testing examples
+Performance testing samples
 
-=======
+
+
+📫 Contact
+Feel free to reach out to me at mbg.job.mail@gmail.com for collaboration or questions.
 >>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
-## Project Overview
 
-This project demonstrates my approach to building a scalable and maintainable test automation framework. It includes:
-
-- Page Object Model (POM) design pattern implementation
-- Utility classes for WebDriver management
-- TestNG for test execution and assertions
-- Maven for dependency management and build automation
-
-## Test Scenarios
-
-Currently, this portfolio includes automated tests for:
-
-1. **Login Functionality**
-   - Successful login with valid credentials
-   - Error handling with invalid credentials
-   - Error handling with valid username but invalid password
-
-## Technical Stack
-
-- Java 11+
-- Selenium WebDriver 4.x
-- TestNG 7.x
-- Maven 3.x
-- WebDriverManager for driver management
-
-## Project Structure
-
-```
-test-automation-portfolio/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── mary/
-│   │               └── testing/
-│   │                   ├── pages/      # Page Objects
-│   │                   └── utils/      # Utility classes
-│   └── test/
-│       ├── java/
-│       │   └── com/
-│       │       └── mary/
-│       │           └── testing/
-│       │               └── tests/      # Test classes
-│       └── resources/                  # Test data & config files
-├── pom.xml                             # Maven configuration
-├── testng.xml                          # TestNG configuration
-└── README.md                           # This file
-```
-
-## How to Run Tests
-
-### Prerequisites
-- Java JDK 11 or higher installed
-- Maven installed
-- Chrome browser installed (or update WebDriverFactory to use your preferred browser)
-
-### Running Tests
-1. Clone this repository
-2. Navigate to the project root directory
-3. Run the tests using Maven:
-   ```
-   mvn clean test
-   ```
-
-## Future Enhancements
-
-I plan to expand this portfolio with:
-
-- Additional test scenarios for different websites
-- API testing examples
-- Performance testing samples
-- Cucumber integration for BDD approach
-- Integration with CI/CD pipelines
-
-## Contact
-
-<<<<<<< HEAD
-Feel free to contact me at mbg.job.mail@gmail.com for any questions or collaboration opportunities..
-=======
-Feel free to contact me at mbg.job.mail@gmail.com for any questions or collaboration opportunities..
->>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
