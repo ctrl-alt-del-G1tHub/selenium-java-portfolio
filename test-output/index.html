@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1646190908\testng-customsuite.xml</span>
+                    <span>C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1889514880\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="locators.IDTests" class="method navigator-link" hash-for-method="testInputsOnRegistrationFormSubmit">testInputsOnRegistrationFormSubmit</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="locators.NameTests" class="method navigator-link" hash-for-method="testSubmitButton">testSubmitButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">locators.IDTests</span>
+              <span class="class-name">locators.NameTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testInputsOnRegistrationFormSubmit">
-                  </a> <!-- testInputsOnRegistrationFormSubmit -->
-                  <span class="method-name">testInputsOnRegistrationFormSubmit</span>
+                  <a name="testSubmitButton">
+                  </a> <!-- testSubmitButton -->
+                  <span class="method-name">testSubmitButton</span>
                   <em>
-(Exercise 101: Fill out Registration Form and Add in Web Tables using ID)                  </em>
+(Exercise 27: Submit Button using By.name)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1646190908\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1889514880\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +147,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;locators.IDTests&quot;&gt;
+      &lt;class name=&quot;locators.NameTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testInputsOnRegistrationFormSubmit&quot;/&gt;
+          &lt;include name=&quot;testSubmitButton&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- locators.IDTests --&gt;
+      &lt;/class&gt; &lt;!-- locators.NameTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -193,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testInputsOnRegistrationFormSubmit')
-data.setCell(0, 2, 'locators.IDTests')
-data.setCell(0, 3, 2779);
+data.setCell(0, 1, 'testSubmitButton')
+data.setCell(0, 2, 'locators.NameTests')
+data.setCell(0, 3, 65);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 65 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,35 +215,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">locators.IDTests</span>
+              <span class="ignored-class-name">locators.NameTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testEmailInput</span>
+                <span class="ignored-method-name">testSeleniumCommands</span>
                 <br/>
-                <span class="ignored-method-name">testAddButton</span>
+                <span class="ignored-method-name">testProfessionSelect</span>
                 <br/>
-                <span class="ignored-method-name">testFirstNameInput</span>
+                <span class="ignored-method-name">testFirstName</span>
                 <br/>
-                <span class="ignored-method-name">testRegistrationSubmitButton</span>
+                <span class="ignored-method-name">testAutomationTool</span>
                 <br/>
-                <span class="ignored-method-name">testPermanentAddress</span>
+                <span class="ignored-method-name">testLastName</span>
                 <br/>
-                <span class="ignored-method-name">testSalaryInputOnRegistrationForm</span>
-                <br/>
-                <span class="ignored-method-name">testFullNameInput</span>
-                <br/>
-                <span class="ignored-method-name">testCurrentAddress</span>
-                <br/>
-                <span class="ignored-method-name">testSearchBox</span>
-                <br/>
-                <span class="ignored-method-name">testSubmitButton</span>
-                <br/>
-                <span class="ignored-method-name">testAccordianOpen</span>
-                <br/>
-                <span class="ignored-method-name">testDepartmentInputOnRegistrationForm</span>
+                <span class="ignored-method-name">testContinentDropdown</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -255,18 +243,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">locators.IDTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">locators.NameTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testInputsOnRegistrationFormSubmit</span>
-                <span class="method-start">3938 ms</span>
+                <span class="method-name">testSubmitButton</span>
+                <span class="method-start">47262 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6719 ms</span>
+                <span class="method-start">47336 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
