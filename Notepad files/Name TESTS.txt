@@ -1,0 +1,118 @@
+Name TESTS
+
+package locators;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+/**
+ * Test class for Name locators on Techlistic website
+ */
+public class NameTests {
+    private WebDriver driver;
+    private NameLocators nameLocators;
+    
+    @BeforeMethod
+    public void setUp() {
+        // Set up WebDriver
+        System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.techlistic.com/p/selenium-practice-form.html");
+        nameLocators = new NameLocators(driver);
+    }
+    
+    @Test(description = "Exercise 1: Find the First Name Input using By.name")
+    public void testFirstName() {
+        try {
+            Assert.assertTrue(nameLocators.getFirstName().isDisplayed(), 
+                             "First Name input not found using Name locator");
+            System.out.println("PASS: Successfully found First Name input using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find First Name input using Name locator: " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 11: Find the input field for Last Name using By.name")
+    public void testLastName() {
+        try {
+            Assert.assertTrue(nameLocators.getLastName().isDisplayed(), 
+                             "Last Name input not found using Name locator");
+            System.out.println("PASS: Successfully found Last Name input using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Last Name input using Name locator " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 27: Submit Button using By.name")
+    public void testSubmitButton() {
+        try {
+            Assert.assertTrue(nameLocators.getSubmitButton().isDisplayed(), 
+                             "Submit Button not found using Name locator");
+            System.out.println("PASS: Successfully found Submit Button using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Submit Button with Name locator: " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 38: Find the Profession (Manual Tester) using By.name")
+    public void testProfessionSelect() {
+        try {
+            Assert.assertTrue(nameLocators.getProfessionSelect().isDisplayed(), 
+                             "Profession Select not found using Name locator");
+            System.out.println("PASS: Successfully found Profession Select using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Profession Select with Name locator: " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 75: Find the Automation Tool (Selenium Webdriver) using By.name")
+    public void testAutomationTool() {
+        try {
+            Assert.assertTrue(nameLocators.getAutomationTool().isDisplayed(), 
+                             "Automation Tool not found using Name locator");
+            System.out.println("PASS: Successfully found Automation Tool using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Automation Tool with Name locator: " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 82: Find the Continent dropdown field using By.name")
+    public void testContinentDropdown() {
+        try { 
+            Assert.assertTrue(nameLocators.getContinentDropdown().isDisplayed(), 
+                             "Continent dropdown not found using Name locator");
+            System.out.println("PASS: Successfully found Continent dropdown using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Add to Continent dropdown with Name locator: " + e.getMessage());
+        }
+    }
+    
+    @Test(description = "Exercise 97: Find the Selenium Commands Multi-Select using By.name")
+    public void testSeleniumCommands() {
+        try {
+            Assert.assertTrue(nameLocators.getSeleniumCommands().isDisplayed(), 
+                             "Selenium Commands not found using Name locator");
+            System.out.println("PASS: Successfully found Selenium Commands using Name locator");
+        } catch (Exception e) {
+            Assert.fail("Failed to find Selenium Commands with Name locator: " + e.getMessage());
+        }
+    }
+            
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
