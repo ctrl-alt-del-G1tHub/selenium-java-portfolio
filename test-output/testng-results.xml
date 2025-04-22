@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="12" total="13" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-21T02:13:31 CDT" name="Default suite" finished-at="2025-04-21T02:13:43 CDT" duration-ms="11191">
+  <suite started-at="2025-04-22T02:15:39 CDT" name="Default suite" finished-at="2025-04-22T02:15:46 CDT" duration-ms="7015">
     <groups>
     </groups>
-    <test started-at="2025-04-21T02:13:31 CDT" name="Default test" finished-at="2025-04-21T02:13:43 CDT" duration-ms="11191">
+    <test started-at="2025-04-22T02:15:39 CDT" name="Default test" finished-at="2025-04-22T02:15:46 CDT" duration-ms="7015">
       <class name="locators.IDTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:31 CDT" name="setUp" finished-at="2025-04-21T02:13:36 CDT" duration-ms="4609" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.IDTests@1165b38]" started-at="2025-04-22T02:15:39 CDT" name="setUp" finished-at="2025-04-22T02:15:43 CDT" duration-ms="3937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRegistrationSubmitButton()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:36 CDT" name="testRegistrationSubmitButton" description="Exercise 98: Find the &#039;Submit&#039; button on Registration Form update in Web Tables using ID" finished-at="2025-04-21T02:13:42 CDT" duration-ms="6237" status="PASS">
+        <test-method signature="testInputsOnRegistrationFormSubmit()[pri:0, instance:locators.IDTests@1165b38]" started-at="2025-04-22T02:15:43 CDT" name="testInputsOnRegistrationFormSubmit" description="Exercise 101: Fill out Registration Form and Add in Web Tables using ID" finished-at="2025-04-22T02:15:46 CDT" duration-ms="2779" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegistrationSubmitButton -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.IDTests@38425407]" started-at="2025-04-21T02:13:42 CDT" name="tearDown" finished-at="2025-04-21T02:13:43 CDT" duration-ms="297" status="PASS">
+        </test-method> <!-- testInputsOnRegistrationFormSubmit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.IDTests@1165b38]" started-at="2025-04-22T02:15:46 CDT" name="tearDown" finished-at="2025-04-22T02:15:46 CDT" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
