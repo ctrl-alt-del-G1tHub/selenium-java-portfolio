@@ -1,0 +1,79 @@
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ClassNameLocators {
+    private WebDriver driver;
+    
+    public ClassNameLocators(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+ // Exercise 5: Find the body height container using By.className
+public WebElement getBodyHeightContainer() {
+    return driver.findElement(By.className("body-height"));
+}
+
+// Exercise 13: Find the container element using By.className 
+public WebElement getContainer() {
+    return driver.findElement(By.className("container"));
+}
+
+// Exercise 20: Find the header-text element using By.className
+public WebElement getHeaderText() {
+    return driver.findElement(By.className("header-text"));
+}
+
+// Exercise 28: Find the main content container using By.className
+public WebElement getMainContainer() {
+    return driver.findElement(By.className("container"));
+}
+
+// Exercise 32: Find the row element using By.className
+public WebElement getRow() {
+    return driver.findElement(By.className("row"));
+}
+
+// Exercise 42: Find the accordion element using By.className
+public WebElement getAccordion() {
+    return driver.findElement(By.className("accordion"));
+}
+
+// Exercise 45: Find the left-pannel element using By.className
+public WebElement getLeftPanel() {
+    return driver.findElement(By.className("left-pannel"));
+}
+
+// Exercise 53: Find the element-group using By.className
+public WebElement getElementGroup() {
+    return driver.findElement(By.className("element-group"));
+}
+
+// Exercise 57: Find the navbar element using By.className
+public WebElement getNavbar() {
+    return driver.findElement(By.className("navbar-dark"));
+}
+
+// Exercise 68: Find the header-wrapper using By.className
+public WebElement getHeaderWrapper() {
+    return driver.findElement(By.className("header-wrapper"));
+}
+
+// Exercise 83: Find the pr-1 element using By.className
+public WebElement getPR1() {
+    return driver.findElement(By.className("pr-1"));
+}
+
+// Exercise 89: Find the group-header element using By.className
+public WebElement getGroupHeader() {
+    return driver.findElement(By.className("group-header"));
+}
+
+// Exercise 94: Find the col-md-3 element using By.className
+public WebElement getColMd3() {
+    return driver.findElement(By.className("col-md-3"));
+}
+
+}

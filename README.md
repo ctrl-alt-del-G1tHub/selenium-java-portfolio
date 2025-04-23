@@ -47,6 +47,8 @@ temp-portfolio/
 │       │   ├── github.ctrlaltdel.selenium.openlibrary/
 │       │   │   └── OpenLibrarySearchTest.java
 │       │   └── locators/
+│       │       ├── ClassNameLocators.java
+│       │       ├── ClassNameTests.java
 │       │       ├── CssSelectorLocators.java
 │       │       ├── CssSelectorTests.java
 │       │       ├── IDLocators.java
@@ -102,8 +104,3 @@ Performance testing samples
 📫 Contact
 Feel free to reach out to me at mbg.job.mail@gmail.com for collaboration or questions.
 >>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
-
-
-
-
-

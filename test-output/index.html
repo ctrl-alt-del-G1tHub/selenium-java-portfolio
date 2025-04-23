@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1889514880\testng-customsuite.xml</span>
+                    <span>C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1205331698\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="locators.NameTests" class="method navigator-link" hash-for-method="testSubmitButton">testSubmitButton</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="locators.ClassNameTests" class="method navigator-link" hash-for-method="testPR1">testPR1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">locators.NameTests</span>
+              <span class="class-name">locators.ClassNameTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSubmitButton">
-                  </a> <!-- testSubmitButton -->
-                  <span class="method-name">testSubmitButton</span>
+                  <a name="testPR1">
+                  </a> <!-- testPR1 -->
+                  <span class="method-name">testPR1</span>
                   <em>
-(Exercise 27: Submit Button using By.name)                  </em>
+(Exercise 83: Find the PR1 element using By.className)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1889514880\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\maryb\AppData\Local\Temp\testng-eclipse-1205331698\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,11 +147,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;locators.NameTests&quot;&gt;
+      &lt;class name=&quot;locators.ClassNameTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;testSubmitButton&quot;/&gt;
+          &lt;include name=&quot;testPR1&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- locators.NameTests --&gt;
+      &lt;/class&gt; &lt;!-- locators.ClassNameTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -193,14 +193,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSubmitButton')
-data.setCell(0, 2, 'locators.NameTests')
-data.setCell(0, 3, 65);
+data.setCell(0, 1, 'testPR1')
+data.setCell(0, 2, 'locators.ClassNameTests')
+data.setCell(0, 3, 49);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 65 ms</span>
+              <span class="suite-total-time">Total running time: 49 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -215,23 +215,35 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">12 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">locators.NameTests</span>
+              <span class="ignored-class-name">locators.ClassNameTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">testSeleniumCommands</span>
+                <span class="ignored-method-name">testHeaderText</span>
                 <br/>
-                <span class="ignored-method-name">testProfessionSelect</span>
+                <span class="ignored-method-name">testLeftPanel</span>
                 <br/>
-                <span class="ignored-method-name">testFirstName</span>
+                <span class="ignored-method-name">testContainer</span>
                 <br/>
-                <span class="ignored-method-name">testAutomationTool</span>
+                <span class="ignored-method-name">testHeaderWrapper</span>
                 <br/>
-                <span class="ignored-method-name">testLastName</span>
+                <span class="ignored-method-name">testAccordion</span>
                 <br/>
-                <span class="ignored-method-name">testContinentDropdown</span>
+                <span class="ignored-method-name">testBodyHeightContainer</span>
+                <br/>
+                <span class="ignored-method-name">testGroupHeader</span>
+                <br/>
+                <span class="ignored-method-name">testColMd3</span>
+                <br/>
+                <span class="ignored-method-name">testRow</span>
+                <br/>
+                <span class="ignored-method-name">testMainContainer</span>
+                <br/>
+                <span class="ignored-method-name">testElementGroup</span>
+                <br/>
+                <span class="ignored-method-name">testNavbar</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -243,18 +255,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">locators.NameTests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">locators.ClassNameTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSubmitButton</span>
-                <span class="method-start">47262 ms</span>
+                <span class="method-name">testPR1</span>
+                <span class="method-start">5189 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">47336 ms</span>
+                <span class="method-start">5239 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
