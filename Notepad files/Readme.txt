@@ -23,12 +23,13 @@ This project demonstrates a scalable and maintainable test automation framework 
 - Error handling with valid username but invalid password
 
 ### 2. **Locator Practice**
-- ID and CSS locator tests using:
-  - [https://demoqa.com](https://demoqa.com)
+- ID, CSS, Name locator tests using:
+  - [https://demoqa.com](https://demoqa.com) (where applicable)
   - [https://openlibrary.org](https://openlibrary.org) (where applicable)
+  - [https://techlistic.com](https://techlistic.com) (where applicable)
 
 ### 3. **Custom Poetic Exercise**
-- A fun test inspired by my poetic interests (`MaryBeAPoetTest.java`)
+- A fun test inspired by my poetic interests (`MaryBeAPoetTest.java`) using my website https://www.marybeapoet.com/
 
 ---
 
@@ -50,6 +51,9 @@ temp-portfolio/
 │       │       ├── CssSelectorTests.java
 │       │       ├── IDLocators.java
 │       │       └── IDTests.java
+│       │       ├── NameLocators.java
+│       │       └── NameTests.java
+
 │       └── resources/
 ├── Drivers/
 │   └── chromedriver.exe
@@ -84,7 +88,7 @@ temp-portfolio/
 mvn clean test
 
 ###🧩 Notes on Locators
-Some ID-based exercises use demoqa.com instead of Open Library due to missing or dynamic IDs.
+Some ID-based exercises use demoqa.com instead of Open Library due to missing or dynamic IDs. Name based exercises use techlistic.com instead of Open Library due to lack of name locators.
 
 Exercises like IDTests.java and CssSelectorTests.java include examples of working with tables, buttons, and headers.
 
@@ -101,5 +105,5 @@ Feel free to reach out to me at mbg.job.mail@gmail.com for collaboration or ques
 
 
 
-using my website https://www.marybeapoet.com/
+
 
