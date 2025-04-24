@@ -1,0 +1,68 @@
+Tagname LOCATORS
+
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class TagNameLocators {
+    private WebDriver driver;
+    
+    public TagNameLocators(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+    // Exercise 8: Find the image of the first book using By.tagName
+    public WebElement getBookImage() {
+        return driver.findElement(By.tagName(".searchResultItem .bookcover img"));
+    }
+    
+    // Exercise 18: Find the first author's name in the search results using By.tagName
+    public WebElement getBookAuthor() {
+        return driver.findElement(By.tagName("bookauthor"));
+    }
+    
+    // Exercise 30: Find the second book title on the page using By.tagName
+    public WebElement getSecondBookTitle() {
+    // Find all anchor tags
+    List<WebElement> links = driver.findElements(By.tagName("a"));
+
+    // Loop to find the second one with class "results" — those are the book title links
+    int count = 0;
+    for (WebElement link : links) {
+        if (link.getAttribute("class") != null && link.getAttribute("class").contains("results")) {
+            count++;
+            if (count == 2) {
+                return link;
+            }
+        }
+    }
+
+    return null; // Return null if not found
+
+}
+   
+   // Exercise 61: Find the book description using By.tagName
+   public WebElement getBookDescription() {
+        return driver.findElement(By.tagName("p"));
+}
+    
+    // Exercise 72: Find the "Review" icon for any book using By.tagName
+    public WebElement getReviewIcon() {
+        return driver.findElement(By.tagName("img"));
+    }
+    
+    // Exercise 95: Find the "Preview" button for the first book in the results list using By.tagName
+    public WebElement getFirstPreviewButton() {
+    WebElement firstResult = driver.findElement(By.className("searchResultItem"));
+    List<WebElement> links = firstResult.findElements(By.tagName("a"));
+
+    for (WebElement link : links) {
+        if (link.getText().equalsIgnoreCase("Preview")) {
+            return link;
+        }
+    }
+    return null; // Preview button not found
+}
+}
