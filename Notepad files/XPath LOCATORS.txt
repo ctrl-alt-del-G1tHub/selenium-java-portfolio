@@ -1,0 +1,133 @@
+XPath LOCATORS
+
+package locators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class XPathLocators {
+    private WebDriver driver;
+    
+    public XPathLocators(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+    // Exercise 4: Find the Home checkbox item using By.xpath
+    public WebElement getHomeCheckbox() {
+        return driver.findElement(By.xpath("//span[text()='Home']"));
+    }
+    
+    // Exercise 12: Find the main header using By.xpath
+    public WebElement getMainHeader() {
+        return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/header[1]/a[1]/img[1]"));
+    }
+    
+    // Exercise 16: Find the expand all button using By.xpath
+    public WebElement getExpandAllButton() {
+        return driver.findElement(By.xpath("//button[contains(@title, 'Expand all')]"));
+    }
+    
+    // Exercise 24: Find the checkbox icon using By.xpath
+    public WebElement getCheckboxIcon() {
+        return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/*[name()='svg'][1]"));
+    }
+    
+    // Exercise 31: Find the tree node using By.xpath
+    public WebElement getTreeNode() {
+        return driver.findElement(By.xpath("//div[@id='tree-node']"));
+    }
+    
+    // Exercise 33: Find the collapse all button using By.xpath
+    public WebElement getCollapseAllButton() {
+        return driver.findElement(By.xpath("//button[contains(@title, 'Collapse all')]"));
+    }
+    
+    // Exercise 39: Find the Downloads checkbox using By.xpath
+    public WebElement getDownloadsCheckbox() {
+        // First expand the Home node to see Downloads
+        driver.findElement(By.xpath("//button[@title='Toggle']")).click();
+        return driver.findElement(By.xpath("//span[text()='Downloads']"));
+    }
+    
+    // Exercise 43: Find the Desktop checkbox using By.xpath
+    public WebElement getDesktopCheckbox() {
+        // First expand the Home node to see Desktop
+        driver.findElement(By.xpath("//button[@title='Toggle']")).click();
+        return driver.findElement(By.xpath("//span[text()='Desktop']"));
+    }
+    
+    // Exercise 49: Find the Documents checkbox using By.xpath
+    public WebElement getDocumentsCheckbox() {
+        // First expand the Home node to see Documents
+        driver.findElement(By.xpath("//button[@title='Toggle']")).click();
+        return driver.findElement(By.xpath("//span[text()='Documents']"));
+    }
+    
+    // Exercise 58: Find the toggle button for Home using By.xpath
+    public WebElement getHomeToggleButton() {
+        return driver.findElement(By.xpath("//label[@for='tree-node-home']//preceding-sibling::button"));
+    }
+    
+    // Exercise 63: Find the result text area using By.xpath
+    public WebElement getResultTextArea() {
+        return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/h1[1]"));
+    }
+    
+    // Exercise 67: Find the Notes checkbox using By.xpath
+    public WebElement getNotesCheckbox() {
+        // First expand Home and then Desktop
+        driver.findElement(By.xpath("//button[@title='Toggle']")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/ol[1]/li[1]/ol[1]/li[1]/span[1]/button[1]/*[name()='svg'][1]")).click();
+        return driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/ol[1]/li[1]/ol[1]/li[1]/ol[1]/li[1]/span[1]/label[1]/span[2]"));
+    }
+    
+    // Exercise 69: Find the Desktop checkbox label using By.xpath
+    public WebElement getDesktopCheckboxLabel() {
+        // First expand the Home node to see Desktop
+        driver.findElement(By.xpath("//button[@title='Toggle']")).click();
+        return driver.findElement(By.xpath("//label[@for='tree-node-desktop']"));
+    }
+    
+    // Exercise 74: Find the Commands checkbox using By.xpath
+    public WebElement getCommandsCheckbox() {
+        // Expand all required nodes
+        expandAllRequiredNodes();
+        return driver.findElement(By.xpath("//input[@id='tree-node-commands']"));
+    }
+    
+    // Exercise 80: Find the WorkSpace checkbox using By.xpath
+    public WebElement getWorkSpaceCheckbox() {
+        // Expand all required nodes
+        expandAllRequiredNodes();
+        return driver.findElement(By.xpath("//input[@id='tree-node-workspace']"));
+
+    }
+
+    // Exercise 90: Find the Angular checkbox using By.xpath
+    public WebElement getAngularCheckbox() {
+        // Expand all required nodes
+        expandAllRequiredNodes();
+        return driver.findElement(By.xpath("//span[text()='Angular']"));
+    }
+    
+    // Exercise 92: Find the React checkbox using By.xpath
+    public WebElement getReactCheckbox() {
+        // Expand all required nodes
+        expandAllRequiredNodes();
+        return driver.findElement(By.xpath("//span[text()='React']"));
+    }
+    
+    // Helper method to expand all required nodes
+    private void expandAllRequiredNodes() {
+        try {
+            // Click the "Expand All" button
+            driver.findElement(By.xpath("//button[contains(@title, 'Expand all')]")).click();
+            
+            // Wait a moment for the tree to expand
+            Thread.sleep(500);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

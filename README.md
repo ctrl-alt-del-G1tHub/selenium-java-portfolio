@@ -61,6 +61,9 @@ temp-portfolio/
 │       │       └── PartialLinkTextTests.java
 │       │       ├── TagNameLocators.java
 │       │       └── TagNameTests.java
+│       │       ├── XPathLocators.java
+│       │       └── XPathTests.java
+
 
 
 │       └── resources/
@@ -111,8 +114,3 @@ Performance testing samples
 📫 Contact
 Feel free to reach out to me at mbg.job.mail@gmail.com for collaboration or questions.
 >>>>>>> branch 'master' of https://github.com/ctrl-alt-del-G1tHub/selenium-java-portfolio
-
-
-
-
-

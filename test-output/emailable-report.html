@@ -9,19 +9,39 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">50,915</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,604</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">locators.PartialLinkTextTests</td><td><a href="#m0">testAddABookLink</a></td><td rowspan="1">1745557195193</td><td rowspan="1">1297</td></tr><tr class="passedeven"><td><a href="#m1">testAuthorsLink</a></td><td rowspan="1">1745557198246</td><td rowspan="1">3217</td></tr><tr class="passedeven"><td><a href="#m2">testBookPreviewButton</a></td><td rowspan="1">1745557203278</td><td rowspan="1">8013</td></tr><tr class="passedeven"><td><a href="#m3">testClassicBooksLink</a></td><td rowspan="1">1745557213187</td><td rowspan="1">9289</td></tr><tr class="passedeven"><td><a href="#m4">testItalianoLink</a></td><td rowspan="1">1745557224198</td><td rowspan="1">423</td></tr><tr class="passedeven"><td><a href="#m5">testLogInLink</a></td><td rowspan="1">1745557226356</td><td rowspan="1">1797</td></tr><tr class="passedeven"><td><a href="#m6">testReturnToTopLink</a></td><td rowspan="1">1745557229835</td><td rowspan="1">248</td></tr><tr class="passedeven"><td><a href="#m7">testSubjectsLink</a></td><td rowspan="1">1745557232749</td><td rowspan="1">1169</td></tr><tr class="passedeven"><td><a href="#m8">testTermsOfServiceLink</a></td><td rowspan="1">1745557237680</td><td rowspan="1">1431</td></tr><tr class="passedeven"><td><a href="#m9">testVolunteerLink</a></td><td rowspan="1">1745557241687</td><td rowspan="1">2250</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">locators.XPathTests</td><td><a href="#m0">testWorkSpaceCheckbox</a></td><td rowspan="1">1745604822876</td><td rowspan="1">10453</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">locators.PartialLinkTextTests#testAddABookLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">locators.PartialLinkTextTests#testAuthorsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">locators.PartialLinkTextTests#testBookPreviewButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">locators.PartialLinkTextTests#testClassicBooksLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">locators.PartialLinkTextTests#testItalianoLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">locators.PartialLinkTextTests#testLogInLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">locators.PartialLinkTextTests#testReturnToTopLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">locators.PartialLinkTextTests#testSubjectsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">locators.PartialLinkTextTests#testTermsOfServiceLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">locators.PartialLinkTextTests#testVolunteerLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">locators.XPathTests#testWorkSpaceCheckbox</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failed to find WorkSpace checkbox using XPath: Expected condition failed: waiting for presence of element located by: By.xpath: //input[@id=&apos;tree-node-workspace&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.testng.Assert.fail(Assert.java:111)
+	at locators.XPathTests.testWorkSpaceCheckbox(XPathTests.java:237)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
