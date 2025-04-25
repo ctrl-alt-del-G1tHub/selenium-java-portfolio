@@ -1,25 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-24T22:45:17 CDT" name="Default suite" finished-at="2025-04-24T22:45:20 CDT" duration-ms="2959">
+  <suite started-at="2025-04-24T23:59:53 CDT" name="Default suite" finished-at="2025-04-25T00:00:44 CDT" duration-ms="50915">
     <groups>
     </groups>
-    <test started-at="2025-04-24T22:45:17 CDT" name="Default test" finished-at="2025-04-24T22:45:20 CDT" duration-ms="2959">
-      <class name="locators.LinkTextTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.LinkTextTests@2d1ef81a]" started-at="2025-04-24T22:45:17 CDT" name="setUp" finished-at="2025-04-24T22:45:19 CDT" duration-ms="2076" status="PASS">
+    <test started-at="2025-04-24T23:59:53 CDT" name="Default test" finished-at="2025-04-25T00:00:44 CDT" duration-ms="50915">
+      <class name="locators.PartialLinkTextTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-24T23:59:53 CDT" name="setUp" finished-at="2025-04-24T23:59:55 CDT" duration-ms="1945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testVisionLink()[pri:0, instance:locators.LinkTextTests@2d1ef81a]" started-at="2025-04-24T22:45:19 CDT" name="testVisionLink" description="Exercise 62: Find the Vision link in the footer using By.linkText" finished-at="2025-04-24T22:45:20 CDT" duration-ms="632" status="PASS">
+        <test-method signature="testAddABookLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-24T23:59:55 CDT" name="testAddABookLink" description="Exercise 66: Find the Add a Book link using By.partialLinkText" finished-at="2025-04-24T23:59:56 CDT" duration-ms="1297" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testVisionLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.LinkTextTests@2d1ef81a]" started-at="2025-04-24T22:45:20 CDT" name="tearDown" finished-at="2025-04-24T22:45:20 CDT" duration-ms="214" status="PASS">
+        </test-method> <!-- testAddABookLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-24T23:59:56 CDT" name="tearDown" finished-at="2025-04-24T23:59:56 CDT" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- locators.LinkTextTests -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-24T23:59:56 CDT" name="setUp" finished-at="2025-04-24T23:59:58 CDT" duration-ms="1550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAuthorsLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-24T23:59:58 CDT" name="testAuthorsLink" description="Exercise 47: Find the Authors link in the search results using By.partialLinkText" finished-at="2025-04-25T00:00:01 CDT" duration-ms="3217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthorsLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:01 CDT" name="tearDown" finished-at="2025-04-25T00:00:01 CDT" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:01 CDT" name="setUp" finished-at="2025-04-25T00:00:03 CDT" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBookPreviewButton()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:03 CDT" name="testBookPreviewButton" description="Exercise 76: Find the Book Preview button on a book&#039;s detail page using By.partialLinkText" finished-at="2025-04-25T00:00:11 CDT" duration-ms="8013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookPreviewButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:11 CDT" name="tearDown" finished-at="2025-04-25T00:00:11 CDT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:11 CDT" name="setUp" finished-at="2025-04-25T00:00:13 CDT" duration-ms="1679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testClassicBooksLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:13 CDT" name="testClassicBooksLink" description="Exercise 17: Find the Classics Books link on the Classics Books Carousel section using By.partialLinkText" finished-at="2025-04-25T00:00:22 CDT" duration-ms="9289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClassicBooksLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:22 CDT" name="tearDown" finished-at="2025-04-25T00:00:22 CDT" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:22 CDT" name="setUp" finished-at="2025-04-25T00:00:24 CDT" duration-ms="1509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testItalianoLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:24 CDT" name="testItalianoLink" description="Exercise 60: Find the Italiano link in a book detail page using By.partialLinkText" finished-at="2025-04-25T00:00:24 CDT" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testItalianoLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:24 CDT" name="tearDown" finished-at="2025-04-25T00:00:24 CDT" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:24 CDT" name="setUp" finished-at="2025-04-25T00:00:26 CDT" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogInLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:26 CDT" name="testLogInLink" description="Exercise 25: Find the LogIn link using By.partialLinkText" finished-at="2025-04-25T00:00:28 CDT" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogInLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:28 CDT" name="tearDown" finished-at="2025-04-25T00:00:28 CDT" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:28 CDT" name="setUp" finished-at="2025-04-25T00:00:29 CDT" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testReturnToTopLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:29 CDT" name="testReturnToTopLink" description="Exercise 56: Find the Return to Top category in the navigation menu using By.partialLinkText" finished-at="2025-04-25T00:00:30 CDT" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReturnToTopLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:30 CDT" name="tearDown" finished-at="2025-04-25T00:00:30 CDT" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:30 CDT" name="setUp" finished-at="2025-04-25T00:00:32 CDT" duration-ms="1798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSubjectsLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:32 CDT" name="testSubjectsLink" description="Exercise 35: Find the Subjects link using By.partialLinkText" finished-at="2025-04-25T00:00:33 CDT" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubjectsLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:33 CDT" name="tearDown" finished-at="2025-04-25T00:00:34 CDT" duration-ms="212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:34 CDT" name="setUp" finished-at="2025-04-25T00:00:37 CDT" duration-ms="3546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTermsOfServiceLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:37 CDT" name="testTermsOfServiceLink" description="Exercise 93: Find the Terms of Service button in the footer using By.partialLinkText" finished-at="2025-04-25T00:00:39 CDT" duration-ms="1431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTermsOfServiceLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:39 CDT" name="tearDown" finished-at="2025-04-25T00:00:39 CDT" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:39 CDT" name="setUp" finished-at="2025-04-25T00:00:41 CDT" duration-ms="2384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testVolunteerLink()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:41 CDT" name="testVolunteerLink" description="Exercise 6: Find the Volunteer link in the footer using By.partialLinkText" finished-at="2025-04-25T00:00:43 CDT" duration-ms="2250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVolunteerLink -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:locators.PartialLinkTextTests@43bc63a3]" started-at="2025-04-25T00:00:43 CDT" name="tearDown" finished-at="2025-04-25T00:00:44 CDT" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- locators.PartialLinkTextTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
