@@ -53,11 +53,12 @@ temp-portfolio/
 │       │       ├── CssSelectorTests.java
 │       │       ├── IDLocators.java
 │       │       └── IDTests.java
+│       │       ├── LinkTextLocators.java
+│       │       └── LinkTextTests.java
 │       │       ├── NameLocators.java
 │       │       └── NameTests.java
 │       │       ├── TagNameLocators.java
 │       │       └── TagNameTests.java
-
 
 
 │       └── resources/

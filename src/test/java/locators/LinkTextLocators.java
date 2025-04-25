@@ -1,0 +1,68 @@
+package locators;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class LinkTextLocators {
+    private WebDriver driver;
+    
+    public LinkTextLocators(WebDriver driver) {
+        this.driver = driver;
+    }
+    
+    // Exercise 3: Find the link to "Advanced Search" using By.linkText
+    public WebElement getAdvancedSearchLink() {
+        return driver.findElement(By.linkText("Advanced Search"));
+    }
+    
+    // Exercise 10: Find the "Contact Us" link in the footer using By.linkText
+    public WebElement getContactUsLink() {
+        return driver.findElement(By.linkText("Contact Us"));
+    }
+    
+    // Exercise 22: Find the link to "Donate" using By.linkText
+    public WebElement getDonateLink() {
+        return driver.findElement(By.linkText("Donate"));
+    }
+    
+    // Exercise 37: Find the link to "Help Center" using By.linkText
+    public WebElement getHelpCenterLink() {
+        return driver.findElement(By.linkText("Help Center"));
+    }
+    
+    // Exercise 50: Find the "Kids" link under book categories using By.linkText
+    public WebElement getKidsLink() {
+        return driver.findElement(By.linkText("Kids"));
+    }
+    
+    // Exercise 55: Find the "Preview" link under each book in the search results using By.linkText
+    public WebElement getPreviewLink() {
+    // Wait for search results to load
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.className("searchResultItem")));
+    
+    // Look for Preview link in search results
+    return driver.findElement(By.linkText("Preview"));
+    
+   }
+    
+    // Exercise 62: Find the "Vision" link in the footer using By.linkText
+    public WebElement getVisionLink() {
+        return driver.findElement(By.linkText("Vision"));
+    }
+    
+    // Exercise 77: Find the "My Account" link in the header using By.linkText
+    public WebElement getMyAccountLink() {
+        return driver.findElement(By.linkText("Log In"));
+    }
+    
+    // Exercise 87: Find the "Espanol" Link using By.linkText
+    public WebElement getEspanolLink() {
+        return driver.findElement(By.linkText("Español (es)"));
+    }
+}
