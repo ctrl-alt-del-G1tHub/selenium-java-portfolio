@@ -57,6 +57,8 @@ temp-portfolio/
 │       │       └── LinkTextTests.java
 │       │       ├── NameLocators.java
 │       │       └── NameTests.java
+│       │       ├── PartialLinkTextLocators.java
+│       │       └── PartialLinkTextTests.java
 │       │       ├── TagNameLocators.java
 │       │       └── TagNameTests.java
 
